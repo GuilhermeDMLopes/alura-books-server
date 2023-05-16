@@ -5,6 +5,8 @@ const rotaLivro = require("./rotas/livro.js")
 
 //Criando aplicação
 const app = express();
+//Recebendo Body do tipo JSON
+app.use(express.json())
 
 //Usando a rota
 app.use('/livros', rotaLivro);
